@@ -49,7 +49,6 @@ def fuzzyP(x, max_err):
         membership[2] = (x - 2 * bisection_error) / bisection_error
     elif 3 * bisection_error < x and x <= 4 * bisection_error:
         membership[2] = (4 * bisection_error - x) / bisection_error
-    # ZE
     if 3 * bisection_error < x and x <= 4 * bisection_error:
         membership[3] = (x - 3 * bisection_error) / bisection_error
     elif 4 * bisection_error < x and x <= 5 * bisection_error:
